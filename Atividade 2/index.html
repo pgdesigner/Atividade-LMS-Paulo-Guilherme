@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nome do Blog</title>
 </head>
-<body>
+<body style="background-color:#afdf78">
     <header>
-        Título do blog
+        <h1>Meditagora</h1>
     </header>
     <nav>
-        <a href="Secção1">seção1</a>
-        <a href="Secção1">seção2</a>
-        <a href="Secção1">seção3</a>
+        <a href="http://movafilmes.com.br/"target="_blank"> Mova</a>
+        <a href="https://www.comprazen.com.br/categoria/18/meditacao" target="_blank">Store</a>
+        <a href="https://www.onenessbrasil.com.br/2018/04/08/meditacao-coletiva-online-na-quarta-as-21h-pelo-zoom/" target="_blank">Grupos</a>
     </nav>
     <div>
         <article>
             <header>
-                <h1>cabeçalho do artigo</h1>
+                <h1>A sua meditação</h1>
             </header>
                 <section>
                         <h2>Primeiro assuto no artigo</h2>
@@ -33,7 +33,7 @@
         <article>
             <header>
                 <h2>
-                    Segundo artigo
+                    Bons habitos que mudam o seu dia
                 </h2>
 
             </header>
@@ -50,7 +50,7 @@
             <h2>
                 desenho em svg
             </h2>
-            <svg width="400px" height="400px" style="border:1px solid black" >
+            <svg style="background-color: aquamarine"" width="400px" height="400px" style="border:1px solid black" >
                 <circle cx="200px" cy="70px" r="50px" 
                     stroke="yellow" stroke-width="4px" fill="pink" > 
                 </circle>
@@ -73,19 +73,34 @@
             <header>
                 <h2>Videos do youtube</h2>
             </header>
+            <section>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JuefpxPGDRg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pRpayFySsto?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>      
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/a83EmojkwcQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/385683962&color=%236c746c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            </section>
         </article>
     </div>
     <div>
-        <article>
-            <header>
-                <h2>Videos do youtube</h2>
-            </header>
-        </article>
+            <form action="welcome_get.php" method="get">
+                    Nome: <input type="text"maxlength="15" name="name"><br>
+                    E-mail: <input type="email" name="email"><br>
+                    Idade: <input type="text" name="email"><br>
+                    Genero: <input type="text"readonly name="email"><br>
+                <input type="radio" name="status" value="pratica">Praticante<br>
+                <input type="radio" name="status" value="naopratica">Não praticante<br>
+                <input type="radio" name="status" value="começou">Comecei hoje<br>
+                <p>O que procura com a meditação?</p>
+                <input type="checkbox" name="search" value="Diminuir a ansiedade"> Diminuir a ansiedade<br>
+                <input type="checkbox" name="search" value="Diminuir o stress"> Diminuir o stress<br>
+                <input type="checkbox" name="search" value="Aumentar o foco"> Aumentar o foco<br>
+                <input type="checkbox" name="search" value="Autoconhecimento"> Autoconhecimento<br>
+                <input type="checkbox" name="search" value="Melhora da vida"> Melhora da vida<br>
+                <p>Entre 25000 e 30000, quanto voce considera que a meditação pode lhe ajudar?</p>
+                <input type="number" name="visão" value="indice" min="250000" max="30000"><br><br>
+
+                <input type="submit">
+            </form>
     </div>
-    
-
-    <h1>
-
-    </h1>
 </body>
 </html>
