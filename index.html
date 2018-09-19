@@ -5,11 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <Style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .layout{
+            overflow: hidden;
+        }
+        .cabeçalho{
+            background-color: blueviolet;
+            float: left;
+            width: 100%;
+        }
+        .cabeçalho ul{
+            list-style-type: none;
+        }
+        .cabeçalho ul li a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 4px;
+            text-align: center;
+
+        }
+        .cabeçalho ul li a:hover {
+            background-color: beige;
+
+        }
+        .Link-stylo{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+    </Style>
 </head>
+
 <body>
-    <a href="Atividade 1/"> Primeira Atividade </a>
-    <a href="Atividade 2/"> Segunda Atividade </a>
-    <a href="Atividade 3/"> Terceira Atividade </a>
-    
+
+    <div class="layout">
+        <nav class="cabeçalho">
+            <ul>
+                <li><a class="Link-stylo" href="Atividade 1/index.html"> Primeira Atividade </a></li>
+                <li><a class="Link-stylo" href="Atividade 2/index.html"> Segunda Atividade </a></li>
+                <li><a class="Link-stylo" href="Atividade 3/index.html"> Terceira Atividade </a></li>
+                <li><a class="Link-stylo" href="Atividade 4/index.html">Quarta Atividade</a></li>
+            </ul>
+        </nav>
+    </div>
+
 </body>
 </html>
