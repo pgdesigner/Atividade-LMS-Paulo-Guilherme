@@ -5,57 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         *{
             padding: 0;
             margin: 0;
         }
-        header div{
-            overflow: hidden;
-           
+        @font-face{
+            font-family: logo;
+            src:url(fontawesome.woff)
         }
-        header div .menuhorizontal{
-            background-color: #4CAF50;
-            width: 100%;
-            float: left;
-        }
-        header div .menuhorizontal ul{
-            list-style-type: none;
-        }
-        header div .menuhorizontal ul li a{
-            text-decoration: none;
-            display: block;
-            float: left;
-            padding: 5px;
-            color: #ffffff;
-            font-size: 28px;
-            font-family: Helvetica;
-            
-        }
-        .tuto, .refe, .expl{
-            float: left;
-            padding: 5px;
-        }
-        .subsession1{
-            display: none;
-            position:absolute;
-            background-color: #555555;
-        }
-        header div .menuhorizontal:hover{
-            background-color: rgb(226, 17, 17);
-        }
-        header div .menuhorizontal ul li div:hover{
-            background-color: white;
-        }
-        header div .menuhorizontal ul li a:hover{
-            color: black;
-
-        }
-        .titulotype{
+        .titulologo{
             color: #555555;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family:logo;
             font-size: 37px; 
             letter-spacing: 3px;
+            line-height: 1;
             display: block;
             text-decoration: none;
             position: relative;
@@ -65,31 +30,107 @@
         .titulospam{
             color: #4CAF50;
         }
+        .menuhorizontal{
+            background-color: #4CAF50;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            box-sizing: border-box;
+            padding-left: 30px;
+            
+        }
+        .menuhorizontal > ul{
+            list-style-type: none;
+          
+        }
+        ul li i{
+            text-align: right;
+        
+        }
+        ul li i:hover{
+            background-color: #ffffff;
+            color: black;
+        }
+        .menu{
+            text-decoration: none;
+            display: block;
+            margin-left: 10px;
+            color: #ffffff;
+            font-size: 28px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+    
+        .menu:hover{
+            color: black;
+            background-color: #ffffff
+        }
+ 
+        ul li{
+            display: inline-block;
+            list-style-type: none;
+            text-decoration: none;
+
+        }
+        ul li .dropdownmenu1{
+            position: absolute;
+            display: none;
+            text-align: center;
+            box-shadow: #555555;
+            box-sizing:border-box;
+        }
+        .dropdownmenu1 li{
+            display: block;
+        }
+        .dropdownmenu1 li a{
+            list-style-type: none;
+            text-decoration: none;
+            display: block;
+            color: black;
+            font-size: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        ul li:hover .dropdownmenu1{
+            display: block;
+            color: black;
+            background-color: #f1f1f1;
+            box-sizing: inherit;
+        }
+
+        .no-margin {
+            margin: 0;
+        }
+
+
     </style>
 </head>
 
 <body>
-    <header>
-        <h1 class="titulotype"> w3scholl.<spam class="titulospam">com</spam></h1>
-            <div>
-                    <nav class="menuhorizontal">
+    <nav>
+        <h1 class="titulologo"> w3scholl.<span class="titulospam">com</span></h1>
+            <div class="menuhorizontal">
                         <ul>
                             <li>
-                                <div class="tuto"><a class="Menu1" href="menu1">Tutorials</a></div>
-                                <div class="subsession1">
-                                    <ul><li><a href="q">info1</a></li></ul>
-                                </div>
+                        
+                                <a class="menu no-margin" href="menu1">Tutorials</a>
+                                    <ul class="dropdownmenu1">
+                                            <li><a href="q">HTML</a></li>
+                                            <li><a href="q">CSS</a></li>
+                                            <li><a href="q">JS</a></li>
+                                    </ul>
                             </li>
                             <li>
-                                <div class="refe"><a class="Menu2" href="menu2">References</a></div>
+                                <a class="menu" href="menu2">References</a>
                             </li>
                             <li>
-                                <div class="expl"><a class="Menu2" href="menu2">Examples</a></div>
+                                <a class="menu" href="menu2">Examples</a>
+                            </li>
+                            <li>
+                                <i style="font-size:30px; color:#ffffff " class="fa">&#xf002;</i>
                             </li>
                         </ul>
-                    </nav>
             </div>
-    </header>
+    </nav>
 
     
 </body>
