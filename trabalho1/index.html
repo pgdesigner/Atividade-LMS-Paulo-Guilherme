@@ -30,11 +30,12 @@
             50%{
                 background-color: rgb(20, 105, 218);
                 color: rgb(134, 236, 103);
+                padding-left: 20px;
             }
             100%{
                 background-color: black;
                 color:white;
-                padding-left: 400px;
+                padding-left: 4px;
             }            
                 
         }
@@ -158,6 +159,59 @@
             }
             
         }
+        .keyframe img{
+            width: 50px;
+            height: 50px;
+            animation-name: avoa;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            transform: rotate(360deg) translate(300px, 300px);
+
+        }
+        @keyframes avoa{
+            0%{
+                transform: translate(20px,20px) rotate(0deg); 
+
+            }
+            10%{
+                transform: translate(60px,50px) rotate(30deg) ;
+            }
+            20%{
+                transform: translate(80px,70px) rotate(90deg) ;
+            }
+            30%{
+                transform: translate(200px,100px) rotate(140deg) ;
+
+            }
+            40%{
+                transform: translate(300px,200px) rotate(360deg) ;
+
+            }
+            50%{
+                transform: translate(250px,150px) rotate(460deg) ;
+
+            }
+            60%{
+                transform: translate(200px,200px) rotate(620deg) ;
+
+            }
+            70%{
+                transform: translate(150px,250px) rotate(430deg) ;
+
+            }
+            80%{
+                transform: translate(80px,300px) rotate(90deg) ;
+
+            }
+            90%{
+                transform: translate(60px,150px) rotate(180deg) ;
+
+            }
+            100%{
+                transform: rotate(0deg) translate(20px,20px);
+
+            }
+        }
 
 
 
@@ -249,7 +303,7 @@
     <nav class="navegador-direito">
         <p>informaçoes</p>
     </nav>
-    <div class="keyframe"><p>conteudo</p></div>
+    <div class="keyframe"><img src="/trabalho1/kisscc0-airplane-paper-plane-drawing-aviation-white-paper-plane-5b51dc5ac5a329.2334255315320914828095.jpg" alt=""></div>
     <footer>
         <p>final do site</p>
     </footer>
