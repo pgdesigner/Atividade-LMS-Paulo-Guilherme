@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .topsite h1{
+            font-family: Tahoma;
+            font-size: 50px;
+            color: black;
+            background-color: black;
+            transition: background-color 200ms;
+            animation-name: site;
+            animation-duration: 2s;
+            animation-iteration-count: infinite; 
+        
+        }
+        @keyframes site{
+            0%{
+                background-color: black;
+                color:white;
+                padding-left: 4px;
+            }
+            50%{
+                background-color: rgb(20, 105, 218);
+                color: rgb(134, 236, 103);
+            }
+            100%{
+                background-color: black;
+                color:white;
+                padding-left: 400px;
+            }            
+                
+        }
+
+        .menu-superior {
+            background-color: aquamarine;
+            overflow: hidden;
+        }
+
+        .menu-superior, .menu-dropdown-botao, .navegador-esquerdo, .navegador2 {
+            list-style-type: none;          
+        }
+
+        .dropdown{
+            float: left;
+        }
+        .botoes{
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+
+        .menu-superior :hover .botoes{
+            background-color: blue;
+        }
+
+        .menu-dropdown-botao{
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 600ms;
+            position: absolute;
+            background-color: bisque;
+            width: 70vw;
+        }
+        .menu-dropdown-botao li a{
+            padding: 3px;
+            text-decoration: none;
+            font-family: Helvetica ;
+            display: block;
+        }
+        .menu-dropdown-botao li{
+            text-align: center;
+        }
+
+        .menu-dropdown-botao li a:hover{
+            background-color: tomato;
+            display: block;
+        }
+        .menu-superior :hover .menu-dropdown-botao{
+            max-height: 100px;
+        }
+        .navegador-esquerdo{
+            
+            float: left;
+            width: 100vw;
+        }
+        .navegador{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color:white;
+            font: bold;
+            padding: 5px;
+            margin: 2px;
+            background-color: blueviolet;
+        
+        }
+        .navegador2{
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 600ms;
+            text-align: center;
+            
+            background-color: aquamarine;
+            
+        }
+        .navegador2 li a{
+            text-decoration: none;
+            display: block;
+        }
+        .navegador2 li a:hover{
+            background-color: white;
+        }        
+        .navegador-esquerdo :hover .navegador2{
+            max-height: 100px;
+        }
+        .navegador-direito{
+            position: absolute;
+            margin: 5px;
+            bottom: 50px;
+            background-color: brown;
+            width: 98vw;
+            height: 60px;
+
+        }
+        footer{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 50px;
+            background-color: springgreen;
+            
+        }
+
+        @media screen and (min-width:600px){
+            .menu-superior{
+                float:right;
+                width: 80vw;
+            }
+            .navegador-esquerdo{
+            
+            float: left;
+            width: 20vw;
+            }
+            .navegador-direito{
+                position: absolute;
+                right: 0px;
+                height: 80vh;
+                width: auto;
+            }
+            
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topsite"><H1>Meu site Usain Bolt</H1></div>
+        <ul class="menu-superior">
+                <li class="dropdown">
+                    <a class="botoes" href="">botao1</a>
+                    <ul class="menu-dropdown-botao">
+                            <li><a href="">sub1</a></li>
+                            <li><a href="">sub2</a></li>
+                            <li><a href="">sub3</a></li>
+                            <li><a href="">sub4</a></li>
+                    </ul>
+                </li >
+
+                <li class="dropdown">
+                    <a class="botoes" href="">botao2</a>
+                    <ul class="menu-dropdown-botao">
+                            <li><a href="">sub1</a></li>
+                            <li><a href="">sub2</a></li>
+                            <li><a href="">sub3</a></li>
+                            <li><a href="">sub4</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="botoes" href="">botao3</a>
+                    <ul class="menu-dropdown-botao">
+                            <li><a href="">sub1</a></li>
+                            <li><a href="">sub2</a></li>
+                            <li><a href="">sub3</a></li>
+                            <li><a href="">sub4</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a class="botoes" href="">botao4</a>
+                    <ul class="menu-dropdown-botao">
+                            <li><a href="">sub1</a></li>
+                            <li><a href="">sub2</a></li>
+                            <li><a href="">sub3</a></li>
+                            <li><a href="">sub4</a></li>
+                    </ul>
+                </li>
+        </ul>
+    </header>
+    <nav >
+        <ul class="navegador-esquerdo">
+            <li class="navergador-esquerdo-box">
+                <a class="navegador" href="">botao1-1</a>
+                <ul class="navegador2">
+                    <li><a href="">botao2-2</a></li>
+                    <li><a href="">botao3-3</a></li>
+                    <li><a href="">botao4-4</a></li>
+                    <li><a href="">botao5-5</a></li>
+                    <li><a href="">botao6-6</a></li>
+                </ul>
+                
+            </li> <li class="navergador-esquerdo-box">
+                    <a class="navegador" href="">botao1-1</a>
+                    <ul class="navegador2">
+                        <li><a href="">botao2-2</a></li>
+                        <li><a href="">botao3-3</a></li>
+                        <li><a href="">botao4-4</a></li>
+                        <li><a href="">botao5-5</a></li>
+                        <li><a href="">botao6-6</a></li>
+                    </ul>
+                    
+            </li>
+            <li class="navergador-esquerdo-box">
+                    <a class="navegador" href="">botao1-1</a>
+                    <ul class="navegador2">
+                        <li><a href="">botao2-2</a></li>
+                        <li><a href="">botao3-3</a></li>
+                        <li><a href="">botao4-4</a></li>
+                        <li><a href="">botao5-5</a></li>
+                        <li><a href="">botao6-6</a></li>
+                    </ul>
+                    
+            </li>
+            
+        </ul>
+    </nav>
+        
+    <nav class="navegador-direito">
+        <p>informaçoes</p>
+    </nav>
+    <div class="keyframe"><p>conteudo</p></div>
+    <footer>
+        <p>final do site</p>
+    </footer>
+    
+</body>
+</html>
