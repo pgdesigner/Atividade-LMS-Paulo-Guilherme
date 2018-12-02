@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.acordeon{
+    background-color: brown;
+
+}
+.nomes:hover{
+    background-color: beige;
+    display: block;
+}
+.conteudo{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 600ms;
+}
+.acordeon .nomes:hover .conteudo{
+    max-height: 20px;
+}
